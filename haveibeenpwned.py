@@ -40,6 +40,7 @@ for mail in result:
         res = json.loads(response.text)
         #Filtering the data
         data = [breach['Name'] for breach in res["Breaches"]]
-        print(data)
+        for dat in data:
+            print(dat)
     else:
         pass
